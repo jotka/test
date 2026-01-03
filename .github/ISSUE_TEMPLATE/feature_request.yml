@@ -6,7 +6,6 @@ body:
     id: summary
     attributes:
       label: "Feature title"
-      placeholder: ""
     validations:
       required: true
 
@@ -14,4 +13,3 @@ body:
     id: use_case
     attributes:
       label: "Use case & motivation"
-      placeholder: ""
