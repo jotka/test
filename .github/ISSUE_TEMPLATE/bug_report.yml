@@ -1,5 +1,5 @@
 name: "🐛 Bug Report"
-description: "Report bugs with logs and repro steps"
+description: "Report a bug in Dockhand"
 body:
   - type: dropdown
     id: version

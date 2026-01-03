@@ -1,6 +1,5 @@
-# .github/ISSUE_TEMPLATE/question.yml
 name: "💬 Question"
-description: Ask about setup, usage, or architecture
+description: "Ask a question about Dockhand"
 body:
   - type: textarea
     id: question

@@ -1,5 +1,5 @@
 name: "🚀 Feature Request"
-description: "Suggest improvements"
+description: "Suggest an improvement for Dockhand"
 body:
   - type: textarea
     id: summary
