@@ -2,8 +2,10 @@
 name: "💬 Question"
 description: Ask about setup, usage, or architecture
 body:
-  - type: markdown
+  - type: textarea
+    id: question
     attributes:
-      value: |
-        Quick answers help everyone! Check docs first: https://dockhand.pro/manual/
-
+      label: "Your Question"
+      placeholder: "What specifically do you need help with?"
+    validations:
+      required: true
