@@ -9,7 +9,3 @@ body:
     validations:
       required: true
 
-  - type: textarea
-    id: use_case
-    attributes:
-      label: "Use case & motivation"
