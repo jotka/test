@@ -11,7 +11,6 @@ body:
         - v1.0.5
         - v1.0.4
         - Other
-    # validations usunięte!
 
   - type: dropdown
     id: arch
@@ -20,34 +19,11 @@ body:
       options:
         - linux/amd64
         - linux/arm64
-        - Other
 
   - type: textarea
     id: steps
     attributes:
-      label: "Steps to Reproduce"
-      description: "Exact steps from clean setup"
-      placeholder: |
-        1. docker compose up -d
-        2. Open localhost:3000  
-        3. Click New Stack
-        4. ...
-      render: bash
+      label: "What's happening?"
+      description: "Describe the problem"
     validations:
       required: true
-
-  - type: textarea
-    id: logs
-    attributes:
-      label: "Logs (docker logs dockhand)"
-      render: shell
-    validations:
-      required: true
-
-  - type: textarea
-    id: expected
-    attributes:
-      label: "Expected vs Actual"
-      placeholder: |
-        Expected: Container starts
-        Actual: SIGILL exit 132
