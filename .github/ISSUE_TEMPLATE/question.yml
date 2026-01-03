@@ -1,5 +1,6 @@
 name: "💬 Question"
 description: "Ask a question about Dockhand"
+labels: ["question"]
 body:
   - type: textarea
     id: question

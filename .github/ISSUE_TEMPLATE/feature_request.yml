@@ -1,11 +1,13 @@
 name: "🚀 Feature Request"
 description: "Suggest an improvement for Dockhand"
+type: "Feature"
+labels: ["enhancement"]
 body:
   - type: textarea
     id: summary
     attributes:
       label: "Feature title"
-      placeholder: "Live container metrics dashboard"
+      placeholder: ""
     validations:
       required: true
 
@@ -13,7 +15,4 @@ body:
     id: use_case
     attributes:
       label: "Use case & motivation"
-      placeholder: |
-        Current: docker stats - manual refresh
-        Wanted: Real-time CPU/RAM graphs per stack
-        Priority: High for homelab users
+      placeholder: ""
