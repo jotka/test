@@ -1,6 +1,5 @@
 name: "🐛 Bug Report"
 description: "Report a bug in Dockhand"
-type: "Bug"
 labels: ["bug"]
 body:
   - type: dropdown
