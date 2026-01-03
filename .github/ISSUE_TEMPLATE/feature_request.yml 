@@ -1,0 +1,48 @@
+# .github/ISSUE_TEMPLATE/feature_request.yml  
+name: "🚀 Feature Request"
+description: Suggest a new feature or improvement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Love new ideas! Please describe what you'd like to see.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Summary"
+      placeholder: "Brief description of the feature"
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: "Motivation"
+      description: "Why is this important? Use case?"
+      placeholder: |
+        - Current workflow: [describe]
+        - With this feature: [describe]
+        - Competitors: Portainer has X, Dockge lacks Y
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternatives Considered"
+      placeholder: "What did you try instead?"
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority"
+      options:
+        - p0-love-it (must have)
+        - p1-nice-to-have  
+        - p2-maybe-later
+      default: 1
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: "Implementation Ideas (optional)"
+      placeholder: "API endpoints? UI mockups?"

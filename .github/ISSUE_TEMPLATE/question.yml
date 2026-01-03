@@ -1,0 +1,22 @@
+# .github/ISSUE_TEMPLATE/question.yml
+name: "💬 Question"
+description: Ask about setup, usage, or architecture
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Quick answers help everyone! Check docs first: https://dockhand.pro/manual/
+
+  - type: textarea
+    id: question
+    attributes:
+      label: "Your Question"
+      placeholder: "What specifically do you need help with?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "Context"
+      placeholder: "What have you tried?"
