@@ -1,99 +1,53 @@
-# .github/ISSUE_TEMPLATE/bug_report.yml
 name: "🐛 Bug Report"
-description: Report a bug to help us improve Dockhand
+description: "Report bugs with logs and repro steps"
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for reporting! Please fill out all fields below.
-
   - type: dropdown
     id: version
     attributes:
       label: "Dockhand Version"
-      description: "Check with `docker inspect fnsys/dockhand`"
       options:
         - latest
         - v1.0.6
-        - v1.0.5  
+        - v1.0.5
         - v1.0.4
-        - other
-      validations:
-        required: true
+        - Other
+    # validations usunięte!
 
   - type: dropdown
-    id: architecture
+    id: arch
     attributes:
       label: "Architecture"
-      description: "Check with `uname -m` or `docker info | grep Architecture`"
       options:
         - linux/amd64
         - linux/arm64
-        - other
-      validations:
-        required: true
+        - Other
 
   - type: textarea
-    id: environment
+    id: steps
     attributes:
-      label: "Environment"
-      description: "OS, Docker version, deployment method"
-      placeholder: |
-        Host: Ubuntu 22.04 x86_64
-        Docker: 29.1.3
-        Deploy: docker compose up -d
-      render: shell
-    validations:
-      required: true
-
-  - type: textarea
-    id: reproduce
-    attributes:
-      label: "Steps To Reproduce"
-      description: "Exact steps to trigger the bug"
+      label: "Steps to Reproduce"
+      description: "Exact steps from clean setup"
       placeholder: |
         1. docker compose up -d
-        2. Open http://localhost:3000
-        3. Click 'New Stack'
-        4. Paste compose file
-        5. Click 'Deploy'
+        2. Open localhost:3000  
+        3. Click New Stack
+        4. ...
       render: bash
-    validations:
-      required: true
-
-  - type: textarea
-    id: expected
-    attributes:
-      label: "Expected Behavior"
-      placeholder: "What should happen?"
-    validations:
-      required: true
-
-  - type: textarea
-    id: actual
-    attributes:
-      label: "Actual Behavior"
-      placeholder: "What actually happens?"
     validations:
       required: true
 
   - type: textarea
     id: logs
     attributes:
-      label: "Logs / Error Messages"
-      description: "`docker logs dockhand` output"
+      label: "Logs (docker logs dockhand)"
       render: shell
     validations:
       required: true
 
   - type: textarea
-    id: screenshots
+    id: expected
     attributes:
-      label: "Screenshots (if UI issue)"
-      placeholder: "Drag & drop or paste URLs"
-
-  - type: textarea
-    id: additional
-    attributes:
-      label: "Additional context"
-      placeholder: "Compose file? Related GitHub issues?"
+      label: "Expected vs Actual"
+      placeholder: |
+        Expected: Container starts
+        Actual: SIGILL exit 132
